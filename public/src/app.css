@@ -1,0 +1,83 @@
+/* table heading */
+.table-refresh { 
+    min-width: 400px;
+    max-width: 1000px;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* table body background*/
+.table-refresh__table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #009578;
+}
+
+/* table heading background */
+.table-refresh__table thead tr {
+    background: #009578;
+    color: #ffffff;
+}
+
+/* table body  text*/
+.table-refresh__table th,
+.table-refresh__table td {
+    text-align: left;
+    padding: 9px 18px;
+    font-weight: normal;
+}
+
+/* make every other row in body gray */
+.table-refresh__table tbody tr:nth-last-of-type(even){
+    background: #eeeeee;
+}
+
+/* refresh button alignment and padding */
+.table-refresh__options{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+.table-refresh__options > *:not(:last-child){
+    margin-right: 12px;
+}
+
+/* .table-refresh__button{
+    background: #eeeeee;
+    color: #333333;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.table-refresh__button > i {
+    font-size: 1.2em;
+} */
+
+/* refresh button animation */
+.table-refresh__button--refreshing {
+    animation: 0.5s rotate infinite linear;
+}
+
+/* refresh button animation */
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* leaderboard title settings */
+.leaderboard {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    padding-left: 20px;
+}
